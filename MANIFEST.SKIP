@@ -1,0 +1,8 @@
+.bak$
+^_build
+^Build$
+^blib
+^cover_db
+^Makefile$
+^MANIFEST\.SKIP$
+.svn
