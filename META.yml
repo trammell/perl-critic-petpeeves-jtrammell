@@ -1,0 +1,19 @@
+---
+name: Perl-Critic-PetPeeves-JTRAMMELL
+version: 0.01
+author:
+  - 'Holmescorp Software Dev Team <softwaredevelopment@holmescorp.com>'
+abstract: The great new Perl::Critic::PetPeeves::JTRAMMELL!
+license: perl
+resources:
+  license: http://dev.perl.org/licenses/
+build_requires:
+  Test::More: 0
+provides:
+  Perl::Critic::PetPeeves::JTRAMMELL:
+    file: lib/Perl/Critic/PetPeeves/JTRAMMELL.pm
+    version: 0.01
+generated_by: Module::Build version 0.2806
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
