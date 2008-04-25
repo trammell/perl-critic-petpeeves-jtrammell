@@ -7,6 +7,9 @@ my $builder = Module::Build->new(
     license             => 'perl',
     dist_author         => 'Holmescorp Software Dev Team <softwaredevelopment@holmescorp.com>',
     dist_version_from   => 'lib/Perl/Critic/PetPeeves/JTRAMMELL.pm',
+    requires => {
+        'Perl::Critic::Utils' => 0,
+    },
     build_requires => {
         'Test::More' => 0,
     },
