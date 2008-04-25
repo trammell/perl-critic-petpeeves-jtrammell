@@ -3,6 +3,7 @@
 ^Build$
 ^blib
 ^cover_db
+^etc
 ^Makefile$
 ^MANIFEST\.SKIP$
 .svn
