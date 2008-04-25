@@ -1,0 +1,18 @@
+[ johnt@JOHNT-XP:~/work/mywork/pcppjt/etc 16 ] perl ppidump 'my $foo = undef;'
+PPI::Document
+  PPI::Statement::Variable
+    PPI::Token::Word    'my'
+    PPI::Token::Symbol          '$foo'
+    PPI::Token::Operator        '='
+    PPI::Token::Word    'undef'
+    PPI::Token::Structure       ';'
+[ johnt@JOHNT-XP:~/work/mywork/pcppjt/etc 17 ] perl ppidump 'my @foo = ();'
+PPI::Document
+  PPI::Statement::Variable
+    PPI::Token::Word    'my'
+    PPI::Token::Symbol          '@foo'
+    PPI::Token::Operator        '='
+    PPI::Structure::List        ( ... )
+    PPI::Token::Structure       ';'
+[ johnt@JOHNT-XP:~/work/mywork/pcppjt/etc 18 ]
+
