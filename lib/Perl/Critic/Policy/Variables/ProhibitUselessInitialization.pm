@@ -7,7 +7,6 @@ use strict;
 use warnings;
 use base 'Perl::Critic::Policy';
 use Perl::Critic::Utils ':severities';
-use Readonly;
 
 our $VERSION = '0.01';
 
@@ -66,7 +65,7 @@ sub supported_parameters {
 =cut
 
 sub default_severity {
-    return $SEVERITY_MEDIUM;
+    return $SEVERITY_LOW;
 }
 
 =head2 default_themes
@@ -74,7 +73,7 @@ sub default_severity {
 =cut
 
 sub default_themes {
-    return qw(core pbp bugs);
+    return qw(bugs JTRAMMELL);
 }
 
 =head2 applies_to
