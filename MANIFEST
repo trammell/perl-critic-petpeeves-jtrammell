@@ -6,7 +6,7 @@ Makefile.PL
 MANIFEST
 META.yml
 README
-t/00-load.t
+t/0load.t
 t/boilerplate.t
 t/pod-coverage.t
 t/pod.t
