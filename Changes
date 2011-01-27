@@ -1,5 +1,10 @@
 Revision history for Perl-Critic-PetPeeves-JTRAMMELL
 
-0.01    Wed Apr 16 16:07:25 CDT 2008
-   * added ProhibitUselessInitialization
+0.02 - 2011-01-27
+-----------------
+* fixed deps
+
+0.01 - 2008-04-16
+-----------------
+* added ProhibitUselessInitialization
 
