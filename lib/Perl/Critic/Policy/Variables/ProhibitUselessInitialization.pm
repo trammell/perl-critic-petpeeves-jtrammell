@@ -1,6 +1,3 @@
-# $Id: ProhibitUselessInitialization.pm 27 2008-05-09 20:07:42Z johntrammell $
-# $URL: https://perlcritic-petpeeves-jtrammell.googlecode.com/svn/trunk/lib/Perl/Critic/Policy/Variables/ProhibitUselessInitialization.pm $
-
 package Perl::Critic::Policy::Variables::ProhibitUselessInitialization;
 
 use strict;
