@@ -2,7 +2,6 @@ package Perl::Critic::PetPeeves::JTRAMMELL;
 
 use strict;
 use warnings;
-
 our $VERSION = '0.01';
 
 =head1 NAME
@@ -12,7 +11,18 @@ Perl::Critic::PetPeeves::JTRAMMELL - policies to prohibit/require my pet peeves
 =head1 DESCRIPTION
 
 Module C<Perl::Critic::PetPeeves::JTRAMMELL> provides policies that I want that
-are not
+haven't already been implemented elsewhere.  So far this is:
+
+=over 4
+
+=item Perl::Critic::Policy::Variables::ProhibitUselessInitialization
+
+Considers unnecessary initialization a style violation, I<e.g.>:
+
+    my $foo = undef;     # assignment not needed
+    my @bar = ();        # ditto
+
+=back
 
 =head1 AUTHOR
 
@@ -58,7 +68,7 @@ L<http://search.cpan.org/dist/Perl-Critic-PetPeeves-JTRAMMELL>
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2008 Holmescorp Software Dev Team, all rights reserved.
+Copyright 2011 John Trammell, all rights reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
