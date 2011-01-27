@@ -1,7 +1,7 @@
 ---
 abstract: 'policies to prohibit/require my pet peeves'
 author:
-  - 'Holmescorp Software Dev Team <softwaredevelopment@holmescorp.com>'
+  - 'John Trammell <johntrammell@gmail.com>'
 build_requires:
   Test::More: 0
 configure_requires:
@@ -20,6 +20,7 @@ provides:
     file: lib/Perl/Critic/Policy/Variables/ProhibitUselessInitialization.pm
     version: 0.01
 requires:
+  Perl::Critic::Policy: 0
   Perl::Critic::Utils: 0
 resources:
   license: http://dev.perl.org/licenses/
