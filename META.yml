@@ -1,6 +1,6 @@
 ---
 name: Perl-Critic-PetPeeves-JTRAMMELL
-version: 0.02
+version: 0.03
 author:
   - 'John Trammell <johntrammell@gmail.com>'
 abstract: policies to prohibit/require my pet peeves
@@ -20,7 +20,7 @@ meta-spec:
 provides:
   Perl::Critic::PetPeeves::JTRAMMELL:
     file: lib/Perl/Critic/PetPeeves/JTRAMMELL.pm
-    version: 0.02
+    version: 0.03
   Perl::Critic::Policy::Variables::ProhibitUselessInitialization:
     file: lib/Perl/Critic/Policy/Variables/ProhibitUselessInitialization.pm
     version: 0.01
