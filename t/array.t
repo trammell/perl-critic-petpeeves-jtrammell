@@ -2,7 +2,7 @@
 
 use strict;
 use warnings;
-use Test::More tests => 4;
+use Test::More tests => 5;
 use Perl::Critic;
 use Perl::Critic::Config;
 use Perl::Critic::Policy::Variables::ProhibitUselessInitialization;
@@ -17,6 +17,7 @@ my @tests = ( # [ code, violation count ]
     [ q{ my @bar = (); },                 1 ],
     [ q{ my @bar = (1); },                0 ],
     [ q{ my @bar = qw(mares eat oats); }, 0 ],
+    [ q! my @bar = do { qw(mares eat oats); } !, 0 ],
 );
 
 for (@tests) {
