@@ -3,6 +3,7 @@ abstract: 'policies to prohibit/require my pet peeves'
 author:
   - 'John Trammell <johntrammell@gmail.com>'
 build_requires:
+  Perl::Critic::Config: 0
   Test::More: 0
 configure_requires:
   Module::Build: 0.36
@@ -15,13 +16,13 @@ name: Perl-Critic-PetPeeves-JTRAMMELL
 provides:
   Perl::Critic::PetPeeves::JTRAMMELL:
     file: lib/Perl/Critic/PetPeeves/JTRAMMELL.pm
-    version: 0.01
+    version: 0.02
   Perl::Critic::Policy::Variables::ProhibitUselessInitialization:
     file: lib/Perl/Critic/Policy/Variables/ProhibitUselessInitialization.pm
-    version: 0.01
+    version: 0.02
 requires:
   Perl::Critic::Policy: 0
   Perl::Critic::Utils: 0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.01
+version: 0.03
