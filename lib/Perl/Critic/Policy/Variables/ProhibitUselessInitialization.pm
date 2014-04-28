@@ -5,7 +5,7 @@ use warnings;
 use base 'Perl::Critic::Policy';
 use Perl::Critic::Utils ':severities';
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 NAME
 
