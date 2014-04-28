@@ -132,10 +132,12 @@ details on how this function works.
 sub violates_scalar {
     my $elem = shift;
     my @c = $elem->schildren;   # "significant" children
+
+    # e.g. (my $x = undef)
     return unless $c[1]->isa('PPI::Token::Symbol') && $c[1]->raw_type eq q{$};
     return unless $c[2] && $c[2]->isa('PPI::Token::Operator') && $c[2] eq q{=};
     return unless $c[3]->isa('PPI::Token::Word') && $c[3] eq q{undef};
-    return unless $c[4]->isa('PPI::Token::Structure') && $c[4] eq q{;};
+    #return unless $c[4]->isa('PPI::Token::Structure') && $c[4] eq q{;};
     return 1;
 }
 
@@ -154,7 +156,7 @@ sub violates_list {
     return unless $c[1]->isa('PPI::Token::Symbol')    && $c[1]->raw_type =~ /^[@%]$/;
     return unless $c[2] && $c[2]->isa('PPI::Token::Operator')  && $c[2] eq q{=};
     return unless $c[3]->isa('PPI::Structure::List')  && $c[3] eq q{()};
-    return unless $c[4]->isa('PPI::Token::Structure') && $c[4] eq q{;};
+    #return unless $c[4]->isa('PPI::Token::Structure') && $c[4] eq q{;};
     return 1;
 }
 

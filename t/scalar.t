@@ -4,7 +4,7 @@
 
 use strict;
 use warnings;
-use Test::More tests => 4;
+use Test::More tests => 5;
 use Perl::Critic;
 use Perl::Critic::Config;
 use Perl::Critic::Policy::Variables::ProhibitUselessInitialization;
@@ -18,10 +18,11 @@ PerlCriticTestUtils::block_perlcriticrc();
 
 # define the tests to run
 my @tests = ( # [ code, violation count ]
-    [ q{ my $foo = undef; },                  1 ],
-    [ q{ my $foo = 1; },                      0 ],
-    [ q! my $foo = \do { my $bar }; !,        0 ],
-    [ q! ( my $foo ) = $bar =~ m/pattern/; !, 0 ],
+    [ ' my $foo = undef; ',                  1 ],
+    [ ' my $foo = 1; ',                      0 ],
+    [ ' my $foo = \do { my $bar }; ',        0 ],
+    [ ' ( my $foo ) = $bar =~ m/pattern/; ', 0 ],
+    [ ' {\(my $o = undef)} ',                1 ],
 );
 
 # run the tests
