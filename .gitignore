@@ -4,3 +4,4 @@ MYMETA.yml
 Makefile
 _build/
 blib/
+*.tar.gz
